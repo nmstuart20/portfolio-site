@@ -1,0 +1,72 @@
+/*Usee CSS Flexbox to display the header and footer sections*/
+header, footer {
+    display: flex;  /* Make header and footer flex containers */
+    justify-content: space-between;  /* Space out flex items */
+    align-items: center;  /* Center flex items vertically */
+    padding: 20px;  /* Add some padding */
+    flex-direction: column;
+}
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.sidebar {
+    width: 75%;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+}
+/* Use CSS grid to display the projects and sidebar sections */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 25vh 75 vh;
+    gap: 20px;
+
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+/* Child combinator to add styles to project children */
+.projects > .project {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+/* Nav links in the haeader. Flexbox is used to align the links */
+nav.nav-links {
+    display: flex;  
+    list-style-type: none;  
+}
+nav.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+.nav-links li:nth-child(4) a:hover {
+    color: #ff00c8;  
+}
+/*Use focus pseudo-class to style the links*/
+nav.nav-links li a:focus {
+    outline: none; 
+    background-color: #f8f9fa;  
+}
+/*Use hover pseudo-class to highlight projects and the sidebar with green*/
+.project:hover, .sidebar:hover {
+    background-color: #91f7b8; 
+}
+/*Use after pseudo-element to add a star character after each project link*/
+.project h2::after {
+    content: " ★"; 
+    color: gold;  
+}
+/*Use child combinator to underline the h2 elements in the project and sidebar sections*/
+.project > h2, .sidebar > h2 {
+    text-decoration: underline;  
+}
+
+/* Use attribute selector to add a border to the logo image */
+img[src*="logo"] {
+    border: 2px solid #007BFF; 
+}
