@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ContactForm.css */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #535353;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust the navigation container */
+nav {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+/* Adjust the logo size and remove margin and position properties */
+nav img {
+  height: 80px; /* Increase logo size */
+}
+
+/* Style the navigation links container if you wrap links in a div */
+.nav-links {
+  display: flex;
+  justify-content: center; /* Center links horizontally */
+  width: 100%; /* Ensure the links container fills the nav width */
+}
+
+/* Style the navigation links */
+nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+  background-color: #ddd; /* Light background color on hover */
+  color: black; /* Text color change on hover */
+}
+
+/* Style for the currently active link (if applicable) */
+nav a.active {
+  background-color: #04AA6D; /* Different background color for the active link */
+  color: white;
+}
+
+/* Adjusted styles for centering navigation links */
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox instead of block */
+  justify-content: center; /* Center flex items (the li elements) horizontally */
+  align-items: center; /* Center flex items vertically */
+  background-color: #f1f1f1; /* Optional: adds a background color to the nav bar */
+}
+
+nav li a {
+  display: block; /* Change links from inline to block elements */
+  color: black; /* Text color */
+  text-align: center; /* Center text within the link */
+  padding: 14px 16px; /* Add some padding for aesthetics */
+  text-decoration: none; /* Remove underline from links */
+}
+
+nav li a:hover {
+  background-color: #bebaba;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Center the Projects header */
+.projects-header {
+  text-align: center; /* Center-align the text */
+}
+
+/* Child combinator to add styles to project children */
+.projects > .project {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+/*Use hover pseudo-class to highlight projects and the sidebar with green*/
+.project:hover, .sidebar:hover {
+  background-color: #91f7b8; 
+}
+/*Use after pseudo-element to add a star character after each project link*/
+.project h2::after {
+  content: " ★"; 
+  color: gold;  
+}
+/*Use child combinator to underline the h2 elements in the project and sidebar sections*/
+.project > h2, .sidebar > h2 {
+  text-decoration: underline;  
+}

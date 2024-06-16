@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Nick Stuart
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% Replace my name and info with yours
+\begin{center}
+    \textbf{\Huge \scshape Nick Stuart} \\ \vspace{1pt}
+    \small 210-882-9905 $|$ \href{mailto:x@x.com}{\underline{nmstuart20@gmail.com}} $|$ 
+    \small Clearence: TS/SCI 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Boston University}{Online Program}
+      {Masters of Software Development}{Fall 2021 -- Spring 2024}
+    \resumeSubheading
+      {University of Texas At Arlington}{Arlington, TX}
+      {Masters of Business Administration}{Fall 2017 -- Fall 2019}
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Bachelors of Science in Electrical Engineering}{Fall 2011 -- Winter 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Sr}{Jun. 2022 -- Present}
+      {Lockheed Martin}{Fort Worth, TX}
+      \resumeItemListStart
+        \resumeItem{Worked as a member of the LM Aero Sensor Fusion team, specializing in Data Association.}
+        \resumeItem{Developed and maintained tooling to analyze software test results (flight, lab, etc.) in C\# and MATLAB}
+        \resumeItem{Reduced significant technical debt of F35 Sensor Fusion code by identifying, resolving and verifying over 50 problem reports (with many being issues that had been present for years)}
+        \resumeItem{Performed all aspects of software development including design, development, test, integration, and maintenance of real-time embedded fusion software in C++}
+        \resumeItem{Developed signals processing capabilities in Rust and supporting tools and webserver for capability demos}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+
+    \resumeSubheading
+      {Engineering Specialist}{Jun. 2020 -- Jun. 2022}
+      {Bell Flight}{Fort Worth, TX}
+      \resumeItemListStart
+        \resumeItem{Developed software in Java to automate several manual tasks involved in the creation of wire diagrams, harnesses, and other wire data. This significantly reduced the normal wire harness development time for a new program the size of FARA}
+        \resumeItem{Worked as a member of the electrical wiring team on the Bell Future Vertical Lift program.}
+        \resumeItem{Designed and released electrical wiring harnesses to support the installation of all systems on the aircraft. }
+        \resumeItem{Created, released, and maintained electrical wire diagrams to support installation and troubleshooting. }
+        \resumeItem{Assisted in the creation of Avionics systems designs and schematics.}
+        \resumeItem{Reviewed schematics to ensure logic and connections would meet requirements and work as intended.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Electronics Engineer}{Aug. 2018 -- Jun. 2020}
+      {Lockheed Martin}{Fort Worth, TX}
+      \resumeItemListStart
+        \resumeItem{Responsible for the release and build of wire diagrams and harness assemblies as well as the training and guidance of new engineers to the team.}
+        \resumeItem{Worked as a member of the electrical wiring design team in the early stages of an ADP program.}
+        \resumeItem{Created the Harness Interface Device Document (HIDD), coordinated with various subsystem teams, the avionics team, and the installation team to derive and implement electrical requirements}
+        \resumeItem{Compile wire diagrams and harness BTPs for installation using Mentor Graphics Capital software.}
+        \resumeItem{Developed CONOPs for harness development workflow and wire diagram release process.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Electronics Engineer Asc}{Jan. 2016 -- Aug. 2018}
+      {Lockheed Martin}{Fort Worth, TX}
+      \resumeItemListStart
+        \resumeItem{IPT technical management for the Communications, Navigation, and Identification team. }
+        \resumeItem{Responsibilities included subcontractor hardware design support, supplier ECP planning and execution, engineering change requests to implement qualification and other failure fixes, technical evaluations of supplier proposals, and writing and reviewing supplier statements of work.}
+        \resumeItem{Integrator for use of Commercial Off the Shelf products on the TACMAN modernization program.}
+        \resumeItem{Found root cause of micro DTC issues and managed the project to implement and release corrective action.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% Uncomment everything from here and replace with your information if you want to include projects
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+% Can replace this section with another skills and tools type section: like SAP, PDM, etc.
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Rust, MATLAB, Java} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Atlassian Suite, Visual Studio, IntelliJ, Eclipse} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
