@@ -30,24 +30,29 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-form">
-        <h1>Contact Me</h1>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <label>Name:</label>
-            <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
-          </div>
-          <div>
-            <label>Email:</label>
-            <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
-          </div>
-          <div>
-            <label>Message:</label>
-            <textarea name="message" value={this.state.message} onChange={this.handleChange} required />
-          </div>
-          <button type="submit">Send</button>
-        </form>
-      </div>
+    <>
+    <div className="header-container">
+    <header className="page-header">Contact Form
+            <div style={{ fontSize: 'small' }}>Fill out the contact form to reach me.</div>
+        </header><div className="contact-form">
+                <h1>Contact Me</h1>
+                <form onSubmit={this.handleSubmit}>
+                    <div>
+                        <label>Name:</label>
+                        <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
+                    </div>
+                    <div>
+                        <label>Message:</label>
+                        <textarea name="message" value={this.state.message} onChange={this.handleChange} required />
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            </div></>
     );
   }
 }

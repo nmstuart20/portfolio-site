@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 // App.js
 import React from 'react';
@@ -8,6 +7,8 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
+import Gallery from './components/Gallery'; 
+
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </div>
       </Router>

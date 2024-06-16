@@ -1,11 +1,12 @@
 // components/Resume.js
 import React from 'react';
 
-class Projects extends React.Component {
-  render() {
+function Projects() {
     return (
-      <div>
-        <h1 class="projects-header">Projects</h1>
+      <div className="header-container">
+        <header className="page-header">Projects
+        <div style={{ fontSize: 'small' }}>A mix of recent personal and work projects.</div>
+        </header>
         <main>
         <div class="projects">
             <div class="project">
@@ -30,7 +31,6 @@ class Projects extends React.Component {
     </main>
       </div>
     );
-  }
 }
 
 export default Projects;

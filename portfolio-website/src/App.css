@@ -56,11 +56,12 @@
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  resize: vertical; /* Allows vertical resizing only, change to 'none' to disable */
 }
 
 .contact-form button {
@@ -97,6 +98,7 @@ nav img {
   justify-content: center; /* Center links horizontally */
   width: 100%; /* Ensure the links container fills the nav width */
 }
+
 
 /* Style the navigation links */
 nav a {
@@ -163,12 +165,110 @@ nav li a:hover {
 .project:hover, .sidebar:hover {
   background-color: #91f7b8; 
 }
-/*Use after pseudo-element to add a star character after each project link*/
-.project h2::after {
-  content: " ★"; 
-  color: gold;  
-}
+
 /*Use child combinator to underline the h2 elements in the project and sidebar sections*/
 .project > h2, .sidebar > h2 {
   text-decoration: underline;  
+}
+
+.page-header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(211, 242, 248);
+  background-image: linear-gradient(120deg, #75c5d9 25%, transparent 25%),
+                    linear-gradient(240deg, #75c5d9 25%, transparent 25%),
+                    linear-gradient(60deg, #75c5d9 25%, transparent 25%),
+                    linear-gradient(300deg, #75c5d9 25%, transparent 25%);
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+}
+
+.page-header{
+  -webkit-box-shadow: 0 8px 6px -6px black;
+     -moz-box-shadow: 0 8px 6px -6px black;
+          box-shadow: 0 8px 6px -6px black;
+}
+
+.header-container {
+  max-width: 800px; /* Limits the width of the container for better readability */
+  margin: auto; /* Centers the container */
+  padding: 20px; /* Adds some padding around the content */
+}
+
+.page-header {
+  text-align: center; /* Centers the header text */
+  margin-bottom: 40px; /* Adds space below the header */
+  margin-top: 150px;
+}
+
+.page-header div {
+  font-size: 18px; /* Adjusts the font size of the subtitle */
+  color: #666; /* Changes the color for a subtle look */
+  margin-top: 10px; /* Adds space between the name and the subtitle */
+}
+
+section {
+  margin-bottom: 30px; /* Adds space between sections */
+}
+
+section h2 {
+  font-family: 'Arial', sans-serif; /* Sets a clean, readable font */
+  color: #333; /* Dark grey color for headers */
+  border-bottom: 2px solid #eee; /* Adds a light line below the header */
+  padding-bottom: 10px; /* Adds space between the header and the line */
+  margin-bottom: 20px; /* Adds space below the header */
+}
+
+section p {
+  text-align: justify; /* Justifies the paragraph text */
+  line-height: 1.6; /* Increases line height for readability */
+  color: #444; /* Slightly lighter text color */
+}
+
+a {
+  color: #007bff; /* Sets link color */
+  text-decoration: none; /* Removes underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Adds underline on hover for clarity */
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adds space between the buttons and the image */
+}
+
+.gallery-item img {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space under the image */
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+       box-shadow: 0 8px 6px -6px black;
+}
+
+button {
+  padding: 10px 15px; /* Adjusts button size */
+  font-size: 16px; /* Increases font size for better readability */
+  cursor: pointer; /* Changes cursor to pointer to indicate clickable area */
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+       box-shadow: 0 8px 6px -6px black;
+}
+
+.nav-header{
+  position: fixed; /* Fixes the header's position relative to the viewport */
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+       box-shadow: 0 8px 6px -6px black;
+}
+
+.resume-container {
+  margin-top: 100px;
 }
