@@ -15,7 +15,7 @@ function Home() {
           <h2>Biography</h2>
           <p>I'm a Senior Engineer within the Aerospace and Defense industry with multiple years of experience. 
                I completed my undergraduate degree in Electrical Engineering at the University of Texas A&M and upon graduating joined Lockheed Martin as a project engineer.
-               Shortly after starting at Lockheed Martin I began my Masters in Business Administration at the University of Texas at Arlington (I like learn new things so when a company is wiling to pay for degrees, this passion for learning turns into graduate studies).
+               Shortly after starting at Lockheed Martin I began my Masters in Business Administration at the University of Texas at Arlington (I like to learn new things so when a company is willing to pay for degrees, this passion for learning turns into graduate studies).
                After spending time as a project engineer in the Mission Systems world, I switched over to Electrical Wiring/Power on a new program within the Skunk Works. During this time I started to write more and more software automating many of the 
                manual processes related to wiring design and development. I realized my passion for software and decided to make the switch to a full time software engineer role.
                This is when I joined the Sensor Fusion team and have worked within that role for the last 3 years.  
