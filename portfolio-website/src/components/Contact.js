@@ -1,5 +1,6 @@
 // components/Contact.js
 import React, { Component } from 'react';
+import Navigation from './Navigation';
 
 class Contact extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class Contact extends Component {
   render() {
     return (
     <>
+    <Navigation />
     <div className="header-container">
     <header className="page-header">Contact Form
             <div style={{ fontSize: 'small' }}>Fill out the contact form to reach me.</div>

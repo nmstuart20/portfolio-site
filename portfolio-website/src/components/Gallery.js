@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import Navigation from './Navigation';
 
 function Gallery () {
   const images = [
-    { id: 1, url: 'image1.jpg', alt: 'Image of a spartan race' },
-    { id: 2, url: 'image2.jpg', alt: 'Image of some skiers' },
-    { id: 3, url: 'image3.jpg', alt: 'Image of a golden doodle' },
+    { id: 1, url: `./image1.jpg`, alt: 'Image of a spartan race' },
+    { id: 2, url: `./image2.jpg`, alt: 'Image of some skiers' },
+    { id: 3, url: `./image3.jpg`, alt: 'Image of a golden doodle' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,6 +24,7 @@ function Gallery () {
 
   return (
     <>
+    <Navigation />
     <div className="header-container">
     <header className="page-header">Photo Gallery
           <div style={{ fontSize: 'small' }}>Photos from over the years.</div>
