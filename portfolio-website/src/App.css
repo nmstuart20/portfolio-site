@@ -125,7 +125,7 @@ nav a.active {
 nav ul {
   list-style-type: none; /* Remove bullet points */
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex; /* Use flexbox instead of block */
   justify-content: center; /* Center flex items (the li elements) horizontally */
   align-items: center; /* Center flex items vertically */
@@ -270,5 +270,5 @@ button {
 }
 
 .resume-container {
-  margin-top: 140px;
+  margin-top: 150px;
 }

@@ -10,18 +10,29 @@ This portfolio website is a React-based application designed to showcase my proj
 - **Contact**: A form or information for reaching out.
 - **Gallery**: A gallery of personal photos.
 
+To visit the deployed website on Github Pages follow this link:
+
+https://nmstuart20.github.io/portfolio-site/
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+### Usage
 
 1. Clone the repo
   ```bash
   git clone https://github.com/nmstuart20/portfolio-site.git
 ```
 
-2. Install packages
+2. Install required packages
   ```sh
   npm install 
+  ```
+
+3. To run locally
+  ```sh
+  git checkout deploy-local
+  cd portfolio-website
+  npm start 
   ```
