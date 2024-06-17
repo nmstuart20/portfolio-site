@@ -272,3 +272,10 @@ button {
 .resume-container {
   margin-top: 140px;
 }
+
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
