@@ -37,7 +37,6 @@
   }
 }
 
-/* ContactForm.css */
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
@@ -61,7 +60,7 @@
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  resize: vertical; /* Allows vertical resizing only, change to 'none' to disable */
+  resize: vertical;
 }
 
 .contact-form button {
@@ -81,7 +80,7 @@
 /* Adjust the navigation container */
 nav {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column; 
   align-items: center;
   background-color: #f1f1f1;
   overflow: hidden;
@@ -89,16 +88,15 @@ nav {
 
 /* Adjust the logo size and remove margin and position properties */
 nav img {
-  height: 80px; /* Increase logo size */
+  height: 80px; 
 }
 
 /* Style the navigation links container if you wrap links in a div */
 .nav-links {
   display: flex;
-  justify-content: center; /* Center links horizontally */
-  width: 100%; /* Ensure the links container fills the nav width */
+  justify-content: center; 
+  width: 100%; 
 }
-
 
 /* Style the navigation links */
 nav a {
@@ -109,35 +107,15 @@ nav a {
   text-decoration: none;
 }
 
-/* Change the color of links on hover */
-nav a:hover {
-  background-color: #ddd; /* Light background color on hover */
-  color: black; /* Text color change on hover */
-}
-
-/* Style for the currently active link (if applicable) */
-nav a.active {
-  background-color: #04AA6D; /* Different background color for the active link */
-  color: white;
-}
-
 /* Adjusted styles for centering navigation links */
 nav ul {
   list-style-type: none; /* Remove bullet points */
   margin: 0;
-  padding: 0;
-  display: flex; /* Use flexbox instead of block */
+  padding: 10px;
+  display: flex; 
   justify-content: center; /* Center flex items (the li elements) horizontally */
   align-items: center; /* Center flex items vertically */
-  background-color: #f1f1f1; /* Optional: adds a background color to the nav bar */
-}
-
-nav li a {
-  display: block; /* Change links from inline to block elements */
-  color: black; /* Text color */
-  text-align: center; /* Center text within the link */
-  padding: 14px 16px; /* Add some padding for aesthetics */
-  text-decoration: none; /* Remove underline from links */
+  background-color: #f1f1f1;
 }
 
 nav li a:hover {
@@ -166,7 +144,7 @@ nav li a:hover {
   background-color: #91f7b8; 
 }
 
-/*Use child combinator to underline the h2 elements in the project and sidebar sections*/
+/*Underline the h2 elements in the project and sidebar sections*/
 .project > h2, .sidebar > h2 {
   text-decoration: underline;  
 }
@@ -213,11 +191,11 @@ section {
 }
 
 section h2 {
-  font-family: 'Arial', sans-serif; /* Sets a clean, readable font */
-  color: #333; /* Dark grey color for headers */
-  border-bottom: 2px solid #eee; /* Adds a light line below the header */
-  padding-bottom: 10px; /* Adds space between the header and the line */
-  margin-bottom: 20px; /* Adds space below the header */
+  font-family: 'Arial', sans-serif; 
+  color: #333; 
+  border-bottom: 2px solid #eee; 
+  padding-bottom: 10px;
+  margin-bottom: 20px; 
 }
 
 section p {
@@ -243,18 +221,18 @@ a:hover {
 }
 
 .gallery-item img {
-  max-width: 100%; /* Ensures the image is responsive */
-  height: auto; /* Maintains aspect ratio */
-  display: block; /* Removes bottom space under the image */
+  max-width: 100%; 
+  height: auto; 
+  display: block;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
        box-shadow: 0 8px 6px -6px black;
 }
 
 button {
-  padding: 10px 15px; /* Adjusts button size */
-  font-size: 16px; /* Increases font size for better readability */
-  cursor: pointer; /* Changes cursor to pointer to indicate clickable area */
+  padding: 10px 15px; 
+  font-size: 16px; 
+  cursor: pointer; 
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
        box-shadow: 0 8px 6px -6px black;
@@ -270,12 +248,12 @@ button {
 }
 
 .resume-container {
-  margin-top: 140px;
+  margin-top: 150px;
 }
 
 footer {
-  background-color: #282c34;
-  color: white;
+  background-color: #f1f1f1;
+  color: black;
   padding: 20px;
   text-align: center;
 }
