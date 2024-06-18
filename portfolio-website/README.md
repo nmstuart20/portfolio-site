@@ -14,6 +14,10 @@ To visit the deployed website on Github Pages follow this link:
 
 https://nmstuart20.github.io/portfolio-site/
 
+The Github repo for this application is:
+
+https://github.com/nmstuart20/portfolio-site
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
