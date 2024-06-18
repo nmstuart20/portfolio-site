@@ -22,6 +22,7 @@ class App extends React.Component {
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/golf-ranking" element={<GolfRankings />} />
           </Routes>
           <footer>
             <p>© 2024 Nicholas Stuart</p>
