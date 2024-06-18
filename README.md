@@ -1,6 +1,5 @@
-# The React application is inside the portfolio-website folder.
-
 # Portfolio Website
+(The React application is inside the portfolio-website folder.)
 
 This portfolio website is a React-based application designed to showcase my projects, skills, and professional information. It's structured to provide a comprehensive overview of my work and experiences through various sections including the Home, Projects, Resume, Contact, and Gallery pages.
 
