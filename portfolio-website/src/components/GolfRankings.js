@@ -43,7 +43,7 @@ function GolfRankings() {
                 <td>{golfer.first_name}</td>
                 <td>{golfer.last_name}</td>
                 <td>{golfer.country}</td>
-                <td>{golfer.avg_points}</td>
+                <td>{golfer.statistics.avg_points}</td>
                 <td>{golfer.statistics.points}</td>
                 <td>{golfer.statistics.events_played}</td>
               </tr>
