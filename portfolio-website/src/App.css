@@ -116,6 +116,8 @@ nav ul {
   justify-content: center; /* Center flex items (the li elements) horizontally */
   align-items: center; /* Center flex items vertically */
   background-color: #f1f1f1;
+  overflow-x: auto; 
+  flex-wrap: nowrap; 
 }
 
 nav li a:hover {

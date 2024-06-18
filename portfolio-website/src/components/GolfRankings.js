@@ -31,7 +31,9 @@ function GolfRankings() {
               <th>First Name</th>
               <th>Last Name</th>
               <th>Country</th>
+              <th>Average Points</th>
               <th>Total Points</th>
+              <th>Events Played</th>
             </tr>
           </thead>
           <tbody>
@@ -41,7 +43,9 @@ function GolfRankings() {
                 <td>{golfer.first_name}</td>
                 <td>{golfer.last_name}</td>
                 <td>{golfer.country}</td>
+                <td>{golfer.avg_points}</td>
                 <td>{golfer.statistics.points}</td>
+                <td>{golfer.statistics.events_played}</td>
               </tr>
             ))}
           </tbody>
