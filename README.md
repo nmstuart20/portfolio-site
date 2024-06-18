@@ -1,4 +1,4 @@
-The React application is inside the portfolio-website folder.
+# The React application is inside the portfolio-website folder.
 
 # Portfolio Website
 
