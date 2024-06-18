@@ -8,7 +8,7 @@ function GolfRankings() {
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     const apiUrl = 'https://api.sportradar.com/golf/trial/v3/en/players/wgr/2024/rankings.json?api_key=iS30RLvmdw3dZ5rPWbbauadvNh7D3WH74J3op6CS';
     const headers = {"Access-Control-Request-Headers": "Content-Type"};
-    fetch(apiUrl, {headers})
+    fetch(proxyUrl + apiUrl, {headers})
       .then(response => response.json())
       .then(data => {
         const topTenGolfers = data.players.slice(0, 10);
