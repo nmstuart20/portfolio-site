@@ -8,6 +8,7 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery'; 
 import { Link } from 'react-router-dom';
+import GolfRankings from './components/GolfRankings';
 
 class App extends React.Component {
   render() {
