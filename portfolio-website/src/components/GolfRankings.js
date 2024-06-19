@@ -5,7 +5,7 @@ function GolfRankings() {
   const [rankings, setRankings] = useState([]);
 
   useEffect(() => {
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const proxyUrl = '"https://cors-server.fly.dev/"';
     const apiUrl = 'https://api.sportradar.com/golf/trial/v3/en/players/wgr/2024/rankings.json?api_key=iS30RLvmdw3dZ5rPWbbauadvNh7D3WH74J3op6CS';
     const headers = {"Access-Control-Request-Headers": "Content-Type"};
     fetch(proxyUrl + apiUrl, {headers})
