@@ -5,7 +5,7 @@ function GolfRankings() {
   const [rankings, setRankings] = useState([]);
 
   useEffect(() => {
-    const proxyUrl = 'https://proxy-43ewr6o3na-uc.a.run.app';
+    const proxyUrl = 'https://proxy-43ewr6o3na-uc.a.run.app/';
     const apiUrl = 'https://api.sportradar.com/golf/trial/v3/en/players/wgr/2024/rankings.json?api_key=iS30RLvmdw3dZ5rPWbbauadvNh7D3WH74J3op6CS';
     fetch(proxyUrl + apiUrl)
       .then(response => response.json())
