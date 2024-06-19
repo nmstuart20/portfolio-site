@@ -5,9 +5,9 @@ function GolfRankings() {
   const [rankings, setRankings] = useState([]);
 
   useEffect(() => {
-    const proxyUrlFly = "https://cors-server.fly.dev/";
+    const proxyUrl = 'https://proxy-43ewr6o3na-uc.a.run.app';
     const apiUrl = 'https://api.sportradar.com/golf/trial/v3/en/players/wgr/2024/rankings.json?api_key=iS30RLvmdw3dZ5rPWbbauadvNh7D3WH74J3op6CS';
-    fetch(proxyUrlFly+apiUrl)
+    fetch(proxyUrl + apiUrl)
       .then(response => response.json())
       .then(data => {
         const topTenGolfers = data.players.slice(0, 10);
