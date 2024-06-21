@@ -21,11 +21,11 @@ function Projects() {
                         <p>Contributed to a suite of tools to analyze Sensor Fusion data products. Added features related to data analsysis, data parsing, and automating analysis actions. </p>
                     </div>
                     <div class="project">
-                        <h2>Rust Newsletter</h2>
+                        <h2><a href="https://github.com/michaelciraci/RustGolfBet" target="_blank" rel="noopener noreferrer">Rust Newsletter</a></h2>
                         <p>Designed and developed a production newsletter for my podcast using Rust. This project was selected to help with the podcast, but also to improve my skills in backend development, specifcally with Rust.</p>
                     </div>
                     <div class="project">
-                        <h2>Fantasy Golf WebApp </h2>
+                        <h2><a href="https://github.com/nmstuart20/zero2prod" target="_blank" rel="noopener noreferrer">Fantasy Golf WebApp</a></h2>
                         <p>Developed a webapp in Rust that allows multiple users to draft golfers in the Masters tournament and keeps track of each users points.</p>
                     </div>
                 </div>
