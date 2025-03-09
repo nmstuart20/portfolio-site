@@ -10,22 +10,24 @@ function Home() {
         </header>
         <section id="welcome">
           <h2>Welcome</h2>
-          <p>Welcome to my portfolio website. Here, you'll find information about my projects, skills, and professional journey.</p>
+          <p>Welcome to my portfolio! Here you'll discover my projects, technical expertise, and professional journey in software engineering.</p>
         </section>
         <section id="biography">
           <h2>Biography</h2>
-          <p>I'm a Senior Engineer within the Aerospace and Defense industry with multiple years of experience.
-            I completed my undergraduate degree in Electrical Engineering at the University of Texas A&M and upon graduating joined Lockheed Martin as a project engineer.
-            Shortly after starting at Lockheed Martin I began my Masters in Business Administration at the University of Texas at Arlington (I like to learn new things so when a company is willing to pay for degrees, this passion for learning turns into graduate studies).
-            After spending time as a project engineer in the Mission Systems world, I switched over to Electrical Wiring/Power on a new program within the Skunk Works. During this time I started to write more and more software automating many of the
-            manual processes related to wiring design and development. I realized my passion for software and decided to make the switch to a full time software engineer role.
-            This is when I joined the Sensor Fusion team and have worked within that role for the last 3 years.
-            In my personal time I like to golf, work out, and learn new things (with this currently being enrolled in the Boston Masters of Software Development).
-            I've also recently started a podcast about trying to podium in a Spartan Race (it's called the <a href="https://www.subparathletes.com">Subpar Athletes podcast</a>).</p>
+          <p>I'm a Senior Engineer in the Aerospace and Defense industry with extensive experience in software development and systems engineering. 
+            After completing my B.S. in Electrical Engineering from Texas A&M University, I joined Lockheed Martin as a project engineer. Driven by my passion for learning, 
+            I pursued an MBA at the University of Texas at Arlington while working full-time.
+            
+            My career evolved from Mission Systems to leading electrical wiring and power systems at Skunk Works. During this time, I discovered my true calling in software development 
+            by creating automation solutions for complex wiring design processes. This led me to transition into a full-time software engineering role with the Sensor Fusion team, 
+            where I've been driving innovation for the past 3 years.
+            
+            Currently, I'm expanding my expertise through Boston University's Master's in Software Development program. Outside of work, I'm an avid golfer, fitness enthusiast, 
+            and co-host of the <a href="https://www.subparathletes.com">Subpar Athletes podcast</a>, where I document my journey to achieve a podium finish in a Spartan Race.</p>
         </section>
         <section id="about-the-project">
           <h2>About the Project</h2>
-          <p>This portfolio website is a personal project to showcase my work and skills. It is built with React, showcasing my ability to create interactive and modern web applications.</p>
+          <p>This portfolio is crafted using React, demonstrating my proficiency in modern web development. It serves as a dynamic showcase of my technical capabilities and professional accomplishments.</p>
         </section>
       </div></>
     );
