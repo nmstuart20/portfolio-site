@@ -8,7 +8,6 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Gallery from './components/Gallery'; 
 import { Link } from 'react-router-dom';
-import GolfRankings from './components/GolfRankings';
 
 class App extends React.Component {
   render() {
@@ -23,7 +22,6 @@ class App extends React.Component {
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/golf-ranking" element={<GolfRankings />} />
           </Routes>
           <footer>
             <p>© 2024 Nicholas Stuart</p>

@@ -13,7 +13,6 @@ function Navigation(){
           <li><Link to="/resume">Resume</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/golf-ranking">Golf Rankings</Link></li>
         </ul>
       </nav>
     );

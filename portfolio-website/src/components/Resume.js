@@ -7,7 +7,7 @@ class Resume extends React.Component {
     return (
         <><Navigation />
         <div className="resume-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <iframe src="./resume_sw.pdf" width="100%" height="100%" alt="pdf"></iframe>
+            <iframe src={`${process.env.PUBLIC_URL}/resume_sw.pdf`} width="100%" height="100%" title="Resume" />
         </div></>
     );
   }
